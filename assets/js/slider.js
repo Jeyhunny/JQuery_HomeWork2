@@ -3,7 +3,8 @@ $(document).ready(function () {
     $(document).on("click", ".right", rightIcon)
     $(document).on("click", ".left", leftIcon)
 
-   
+    $(document).on("mouseover", ".right", rightIcon)
+    $(document).on("mouseover", ".left", leftIcon)
 
 
     function rightIcon() {
@@ -30,8 +31,8 @@ $(document).ready(function () {
         }
     }
 
-    // setInterval(() => {
-    //     rightIcon();
-    // }, 2000);
+    setInterval(() => {
+     rightIcon();
+    }, 2000);
 
 })
